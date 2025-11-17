@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>The Summer I Turned Pretty - Fanpage</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#B4D6E1",
+                "background-light": "#F9F9F9",
+                "background-dark": "#101a22",
+                "text-light": "#4A4A4A",
+                "text-dark": "#E0E0E0",
+                "secondary": "#C8E6D2",
+                "border-light": "#EAEAEA",
+                "border-dark": "#2A343C",
+              },
+              fontFamily: {
+                "display": ["Plus Jakarta Sans", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "1rem", "lg": "1.5rem", "xl": "2rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* ----------------------------------------------------
+           🔥 FIX: Animación que muestra texto y botón del hero
+        ----------------------------------------------------- */
+        .hero-fade-in {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+            transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+        }
+    </style>
+
+    <style>
+        /* Animación suave de desplazamiento horizontal */
+        @keyframes waveMove {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-150px); }
+        }
+
+        .wave {
+          animation: waveMove 4s ease-in-out infinite alternate;
+        }
+    </style>
+
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-display">
+
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col w-full max-w-5xl flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark px-6 sm:px-10 py-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<div class="flex items-center gap-3 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_6_535)"><path clip-rule="evenodd" d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z" fill="currentColor" fill-rule="evenodd"></path></g><defs><clippath id="clip0_6_535"><rect fill="white" height="48" width="48"></rect></clippath></defs></svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">The Summer I Turned Pretty</h2>
+</div>
+<div class="hidden sm:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">Podcast</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">Top 5</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">Galería</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Explora</span>
+</button>
+</div>
+<button class="sm:hidden flex items-center justify-center size-10 rounded-full hover:bg-black/5 dark:hover:bg-white/5">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="px-4 sm:px-6 py-8 sm:py-12">
+<div class="flex flex-col gap-12 sm:gap-16">
+<div class="@container">
+<div class="@[480px]:p-0">
+
+
+    <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4 text-center relative overflow-hidden hero-spot"
+         data-alt="A fanart-style illustration of a serene beach with a wooden pier and soft clouds"
+         style='background-image: linear-gradient(rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.35) 100%), url("https://www.bryantre.com/sites/default/files/uploads/wrightsville-post.jpg");'>
+
+        <!-- SVG ondas decorativas animadas -->
+        <svg class="absolute bottom-0 left-0 w-full h-32 pointer-events-none overflow-visible"
+             viewBox="0 0 1440 120" preserveAspectRatio="none">
+
+            <g>
+                <!-- Primera ola -->
+                <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z"
+                      fill="rgba(255,255,255,0.35)"/>
+                <!-- Segunda ola idéntica, justo a continuación -->
+                <path d="M1440,60 C1800,120 2520,0 2880,60 L2880,120 L1440,120 Z"
+                      fill="rgba(255,255,255,0.35)"/>
+                <!-- Animación del grupo -->
+                <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        from="0 0"
+                        to="-1440 0"
+                        dur="10s"
+                        repeatCount="indefinite"/>
+            </g>
+        </svg>
+
+
+
+
+        <!-- contenido con fade-in -->
+        <div class="flex flex-col gap-2 z-10 opacity-0 translate-y-4 hero-content">
+            <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl max-w-2xl font-diary">
+                Algunos veranos no duran para siempre, pero te marcan para toda la vida.
+            </h1>
+            <h2 class="text-white/90 text-sm font-normal leading-normal @[480px]:text-base max-w-2xl">
+                We’ll always have summer.
+            </h2>
+        </div>
+
+        <button class="flex min-w-[84px] max-w-[480px] z-10 mt-4 cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-text-light text-sm font-bold hover:opacity-90 transition-opacity hero-cta opacity-0 translate-y-4">
+            <span class="truncate">Explora el verano</span>
+        </button>
+
+        <!-- parallax attribute for JS -->
+        <div class="absolute inset-0 z-0 hero-parallax" aria-hidden="true"></div>
+    </div>
+
+
+</div>
+</div>
+<section>
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4">Universo Transmedia</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="flex flex-1 gap-4 rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-background-dark/50 p-4 flex-col">
+<div class="text-primary"><span class="material-symbols-outlined" style="font-size: 28px;">mic</span></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-base font-bold leading-tight">Podcast</h3>
+<p class="text-sm font-normal leading-normal text-text-light/70 dark:text-text-dark/70">Escucha nuestra historia y debates sobre la serie.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-background-dark/50 p-4 flex-col">
+<div class="text-primary"><span class="material-symbols-outlined" style="font-size: 28px;">play_circle</span></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-base font-bold leading-tight">Top 5 Escenas</h3>
+<p class="text-sm font-normal leading-normal text-text-light/70 dark:text-text-dark/70">Mira los mejores momentos que nos hicieron suspirar.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-background-dark/50 p-4 flex-col">
+<div class="text-primary"><span class="material-symbols-outlined" style="font-size: 28px;">photo_library</span></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-base font-bold leading-tight">Galería</h3>
+<p class="text-sm font-normal leading-normal text-text-light/70 dark:text-text-dark/70">Descubre fotos de personajes y escenarios.</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4">Podcast: Siempre nos quedará el verano</h2>
+<div class="bg-secondary/40 dark:bg-secondary/10 rounded-lg p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-center">
+<div class="w-full md:w-1/2 flex flex-col gap-4">
+<h3 class="text-lg font-bold">Episodio 1: El Verano Que Nos Cambió</h3>
+<p class="text-sm leading-relaxed text-text-light/80 dark:text-text-dark/80">Revive con nosotros el inicio de todo. Analizamos el primer encuentro de Belly con los hermanos Fisher en Cousins Beach, las mariposas del primer amor y los secretos que empezaban a flotar en el aire veraniego. ¿Team Conrad o Team Jeremiah desde el principio? ¡Acompáñanos en este viaje nostálgico!</p>
+</div>
+<div class="w-full md:w-1/2 bg-white dark:bg-background-dark/50 rounded-lg p-4 shadow-sm border border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<img alt="Podcast cover art showing a summer beach scene" class="w-20 h-20 rounded-md object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlwFokHmVposdig9ZMgCDnpkcfY0Z5u53eILDEwwy8S_C1NN7G8lQMAZpLs0C1zgDbTRMFp_9bL1G-1_Eim9BL9LLdmYHy6R9Tk6OCEuEanCdUjCQu_hEIacviCNnD5eofdTmjUyOah7n4yC-lNJpvpvUqhVS2zs8qbsxzFp_5lIHRzjcoTK4-L5NK1Q6GlM_bwO73CurCMNX20y1PKMGEx9Qw1YBKGsqHSy6-d_5uWUB6fiKNyUwwGV0sEhUEFIrfZT1bdip3MAA"/>
+<div class="flex flex-col flex-1">
+<span class="font-bold text-sm">Siempre nos quedará el verano</span>
+<span class="text-xs text-text-light/60 dark:text-text-dark/60">Ep. 1</span>
+</div>
+<button class="flex items-center justify-center size-10 rounded-full bg-primary text-text-light hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">play_arrow</span>
+</button>
+</div>
+<div class="flex items-center gap-2 mt-4">
+<span class="text-xs text-text-light/60 dark:text-text-dark/60">01:23</span>
+<div class="w-full h-1 bg-gray-200 dark:bg-gray-700 rounded-full">
+<div class="w-1/4 h-1 bg-primary rounded-full"></div>
+</div>
+<span class="text-xs text-text-light/60 dark:text-text-dark/60">34:50</span>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4">Galería de Personajes y Escenarios</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<div class="group relative overflow-hidden rounded-lg">
+<img class="w-full h-60 object-cover transform group-hover:scale-110 transition-transform duration-300" data-alt="Portrait of a young woman smiling on the beach, representing Belly" src="https://preview.redd.it/belly-conklin-v0-bcfptlpybevc1.jpeg?width=640&crop=smart&auto=webp&s=12842fafd8e8059ac8f96bdf89458a6b4a27c1f2"/>
+<div class="absolute inset-0 bg-black/40 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-white font-bold">Belly Conklin</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg">
+<img class="w-full h-60 object-cover transform group-hover:scale-110 transition-transform duration-300" data-alt="Portrait of a pensive young man looking out at the sea, representing Conrad" src="https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/537628953_1070210415309533_5620448176117918155_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=6oniUGRzhMsQ7kNvwG0OFDt&_nc_oc=AdmZjwTCVgM8AYe6hGO-uvxxkUWVH2mtrjwLS3EfHmshgZGem2GSAqCEDZrDzxvk09SOovXk_rkNccedblP2fdNP&_nc_zt=23&_nc_ht=scontent.faep14-2.fna&_nc_gid=B2PVfGwefD-GNm_HRF0WwA&oh=00_AficYYyoUcHrzufM7_EzCAY6MA9J6TPc0e3iPxXw_APtMg&oe=69205BB9"/>
+<div class="absolute inset-0 bg-black/40 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-white font-bold">Conrad Fisher</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg">
+<img class="w-full h-60 object-cover transform group-hover:scale-110 transition-transform duration-300" style="object-position: 60% center;"  data-alt="Portrait of a cheerful young man with a bright smile, representing Jeremiah" src="https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/08/jeremiah.jpg"/>
+<div class="absolute inset-0 bg-black/40 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-white font-bold">Jeremiah Fisher</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg">
+<img class="w-full h-60 object-cover transform group-hover:scale-110 transition-transform duration-300" data-alt="A beautiful beach house with a large porch, representing the Cousins Beach house" src="https://i.etsystatic.com/47975940/r/il/a5d38d/7035931027/il_570xN.7035931027_nqy3.jpg"/>
+<div class="absolute inset-0 bg-black/40 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-white font-bold">Cousins Beach</span>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="text-center bg-primary/20 dark:bg-primary/10 rounded-lg py-12 px-6">
+<h2 class="text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.015em] max-w-lg mx-auto">¿Y si todo hubiera sido diferente?</h2>
+<p class="mt-3 mb-6 max-w-md mx-auto text-text-light/80 dark:text-text-dark/80">Descubre un final alternativo exclusivo en nuestro último episodio del podcast.</p>
+<button class="flex mx-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-text-light text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Escuchar ahora</span>
+</button>
+</div>
+</section>
+</div>
+</main>
+<footer class="text-center py-8 mt-12 border-t border-border-light dark:border-border-dark">
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">Página creada por fans y para fans de "The Summer I Turned Pretty".</p>
+<p class="text-xs text-text-light/50 dark:text-text-dark/50 mt-1">© 2024. Todos los derechos de los personajes pertenecen a sus respectivos creadores.</p>
+<div class="flex justify-center mt-4 text-primary cursor-pointer" title="Easter Egg!">
+<span class="material-symbols-outlined">waves</span>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<!-- ----------------------------------------------------
+     🔥 FIX JS: Activa animación cuando carga la página
+----------------------------------------------------- -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const content = document.querySelector(".hero-content");
+        const button = document.querySelector(".hero-cta");
+
+        // Aparecen con animación suave
+        setTimeout(() => {
+            if (content) content.classList.add("hero-fade-in");
+            if (button) button.classList.add("hero-fade-in");
+        }, 150); // pequeño delay para un fade-in más natural
+    });
+</script>
+
+</body>
+</html>
